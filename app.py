@@ -72,7 +72,7 @@ st.markdown(
     
     ### :green[LayerZero: TBD]
     
-    1. Buy STG and stake. Vote.
+    1. Buy STG and [stake](https://stargate.finance/stake). [Vote](https://snapshot.org/#/stgdao.eth).
     2. Bridge to aptos through Liquidswap
     3. Use Sushi Xswap (cheapest between Fantom and Poly)
     4. Use USDC bridge (testnet currently closed)
