@@ -4,7 +4,7 @@ from streamlit_option_menu import option_menu
 import time
 import plotly.express as px
 import plotly.graph_objects as go
-import figures as f
+#import figures as f
 import icons as icons
 
 st.set_page_config(page_title='Airdrops',  layout='wide', page_icon='images/airdrop.png')
@@ -15,7 +15,7 @@ gap = '<span>&nbsp;&nbsp;</span>'
 t1, t2 = st.columns((1,5))
 t1.image('images/airdrop.png', width = 120)
 t2.markdown(proj_title, unsafe_allow_html=True)
-t2.markdown("""*Last Update: April 15th 2023*""")
+t2.markdown("""*Last Update: April 30th 2023*""")
 
 
 #=========================== OVERVIEW ==============================
@@ -75,7 +75,12 @@ st.markdown(
     1. Buy STG and [stake](https://stargate.finance/stake). [Vote](https://snapshot.org/#/stgdao.eth).
     2. Bridge to aptos through Liquidswap
     3. Use Sushi Xswap (cheapest between Fantom and Poly)
-    4. Use USDC bridge (testnet currently closed)
+    4. BTC.B 
+    - prerequisite: Avalanche chain; Bungee cheap - 0.026u; Could use SushiXswap for another LayerZero transaction, but fee at 0.89u
+    - buy btc on avalanche
+    5. Use USDC bridge (testnet currently closed)
+    
+    Note [Dune](https://dune.com/cryptoded/layerzero): Trx > 10; #months > 2; vol > 2k u
    
     ### Fuel: TBD 
     ### Zeta: TBD 
@@ -101,14 +106,18 @@ st.markdown(
     ### :green[ZkSync: High Chance] 
     
     Token launch around April 2024. *(need to confirm)*
-    1. Cheapest bridge: using Orbiter (ETH: Poly to zkSync Era) (min 0.006ETH; more required for bridging to zkSync Lite)
-    2. One time: provide liquidity on SyncSwap (2-3 u each time)
-    3. Weekly / monthly: trade on SyncSwap, Velocore, Zigzag (zkSync Lite only), Nexon Finance. Ideally use everything once (to increase # of smart contracts used), then keep using SyncSwap (SYNC launch confirmed).
-    4. Frequency TBD: mint zkSync NFT on 4everland (Step 2 in [link (in Chinese)](https://zhuanlan.zhihu.com/p/615574075)) 
+    1. Bridge1: using Orbiter (ETH: Poly to zkSync Era) (min 0.006ETH; more required for bridging to zkSync Lite)
+    2. Bridge2: use LayerSwap (similar to CEX; min 0.0015ETH)
+    3. One time: provide liquidity on SyncSwap (2-3 u each time)
+    4. One time: register for ZNS domain 
+    5. Weekly / monthly: trade on SyncSwap (1u cost), Velocore, Zigzag (zkSync Lite only - 0.2u cost), Nexon Finance. Ideally use everything once (to increase # of smart contracts used), then keep using SyncSwap (SYNC launch confirmed).
+    6. Frequency TBD: mint zkSync NFT on 4everland (Step 2 in [link (in Chinese)](https://zhuanlan.zhihu.com/p/615574075)) 
     
     Step by step w/ screenshots (in Chinese): https://www.youtube.com/watch?v=e0vlQjQWATU
     The video covers step2&3 above. Step 1 in video uses SyncSwap. While such bridging is more expensive than Orbiter, it does increase the chance of 
     a SyncSwap airdrop.
+    
+    Note [Dune](https://dune.com/gm365/era): Bridging amount > 0.1ETH; trx >= 10; #month > 4; vol > 1ETH
     
     ### :blue[StarkNet]: TBD 
     
