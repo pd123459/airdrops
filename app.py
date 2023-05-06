@@ -15,7 +15,7 @@ gap = '<span>&nbsp;&nbsp;</span>'
 t1, t2 = st.columns((1,5))
 t1.image('images/airdrop.png', width = 120)
 t2.markdown(proj_title, unsafe_allow_html=True)
-t2.markdown("""*Last Update: April 30th 2023*""")
+t2.markdown("""*Last Update: May 6th 2023*""")
 
 
 #=========================== OVERVIEW ==============================
@@ -64,6 +64,34 @@ st.markdown(
 )
 
 st.markdown(
+    """
+
+    ---
+    # Historical Airdrop Rules
+
+   1. [Optimism](https://community.optimism.io/docs/governance/airdrop-1/#background): 
+   Airdrop 1: User / repeated user / DAO Voters (small votes do not count, >0.1%) / Multisig / Gitcoin / Out of ETH
+   - Users (92k; [**:green[top 30%]**](https://flipsidecrypto.xyz/hess/optimism-new-users-after-airdrop-round-2-FgwQ_v));
+   - Repeated users (19k; **:green[top 6.2%]**)
+   [Airdrop 2](https://community.optimism.io/docs/governance/airdrop-2/#background): 
+   Governance rwd (>2k delegated days) / gas 80% rebate
+   
+   2. [Arbitrum](https://docs.arbitrum.foundation/airdrop-eligibility-distribution#:~:text=User%20airdrop%20eligibility%20details%E2%80%8B&text=Points%20earned%20on%20Arbitrum%20Nova,performed%20before%20the%20snapshot%20date.):
+   More than 3 score: 
+   - bridge
+   - months: 2/6/9
+   - trx / smart contract: 4/10/25/100
+   - trx value: 10k/50k/250k
+   - bridge value: 10k/50k/250k 
+   Most airdrop recipients (270,789 addresses) received less than 1,250 ARB tokens; 
+   4,428 recipients qualified for the 10,250-token top tier. [Total 962,709 One users, 148,932 Nova users](https://dune.com/gas101/arbitrum-dashboard) 
+   on March 23rd, 2023. **:green[24.76%]** addresses got the airdrop. 
+    
+    """
+    , unsafe_allow_html=True
+)
+
+st.markdown(
     f"""
     ---
     # Potential L1 Airdrops
@@ -80,7 +108,7 @@ st.markdown(
     - buy btc on avalanche
     5. Use USDC bridge (testnet currently closed)
     
-    Note [Dune](https://dune.com/cryptoded/layerzero): Trx > 10; #months > 2; vol > 2k u
+    Note [Dune](https://dune.com/cryptoded/layerzero): [Trx > 10](https://dune.com/guoyi/layerzero-dashboard-data); #months > 2; vol > 2k u
    
     ### Fuel: TBD 
     ### Zeta: TBD 
@@ -117,7 +145,7 @@ st.markdown(
     The video covers step2&3 above. Step 1 in video uses SyncSwap. While such bridging is more expensive than Orbiter, it does increase the chance of 
     a SyncSwap airdrop.
     
-    Note [Dune](https://dune.com/gm365/era): Bridging amount > 0.1ETH; trx >= 10; #month > 4; vol > 1ETH
+    Note [Dune](https://dune.com/gm365/era): Bridging amount > 0.1ETH; [trx >= 10](https://dune.com/geliovu/zksync-airdrop-tier); #month > 4; vol > 1ETH
     
     ### :blue[StarkNet]: TBD 
     
